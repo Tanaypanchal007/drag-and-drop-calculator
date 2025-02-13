@@ -33,7 +33,7 @@ const Calculator = () => {
             key={index}
             label={btn.label}
             color={btn.color}
-            className={`${btn.span ? `col-span-${btn.span}` : ""}`} // Add col-span if specified
+            className={`${btn.span ? `col-span-${btn.span}` : ""}`}
           />
         ))}
       </div>
