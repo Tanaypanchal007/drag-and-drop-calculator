@@ -3,6 +3,7 @@ import "./App.css";
 import Calculator from "./components/Calculator";
 import useCalculatorStore from "./store/useCalculatorStore";
 import ThemeToggle from "./components/ThemeToggle";
+import Note from "./components/Note";
 
 const App = () => {
   const { theme } = useCalculatorStore();
@@ -15,7 +16,10 @@ const App = () => {
   return (
     <div className="flex justify-center items-center h-screen bg-light-main-bg dark:bg-dark-main-bg">
       <ThemeToggle />
-      <Calculator />
+      <div className="flex flex-col justify-center items-center">
+        <Calculator />
+        <Note />
+      </div>
     </div>
   );
 };
