@@ -43,7 +43,7 @@ const useCalculatorStore = create((set) => ({
         const expression = state.display.replace(/×/g, "*").replace(/÷/g, "/");
         return { display: eval(expression).toString() };
       } catch {
-        return { display: "Error" };
+        return { display: "0" };
       }
     }),
 

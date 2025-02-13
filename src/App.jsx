@@ -14,7 +14,7 @@ const App = () => {
   }, [theme]);
 
   return (
-    <div className="flex font-mono justify-center items-center h-screen bg-light-main-bg dark:bg-dark-main-bg">
+    <div className="flex font-mono justify-center items-center min-h-screen bg-light-main-bg dark:bg-dark-main-bg">
       <ThemeToggle />
       <div className="flex flex-col justify-center items-center mt-[35px]">
         <Calculator />
