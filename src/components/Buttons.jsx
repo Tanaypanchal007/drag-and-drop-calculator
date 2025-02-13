@@ -1,6 +1,6 @@
 import useCalculatorStore from "../store/useCalculatorStore";
 
-const Button = ({ label, color, className }) => {
+const Buttons = ({ label, color }) => {
   const { addValue, clearDisplay, evaluateExpression, removeLastCharacter } =
     useCalculatorStore();
 
@@ -20,11 +20,11 @@ const Button = ({ label, color, className }) => {
     <button
       style={{ backgroundColor: color }}
       onClick={handleClick}
-      className={`p-4 text-2xl font-semibold rounded-lg transition-all text-white hover:opacity-80 ${className}`}
+      className="w-full h-full text-2xl font-semibold rounded-lg transition-all text-white hover:opacity-80"
     >
       {label}
     </button>
   );
 };
 
-export default Button;
+export default Buttons;

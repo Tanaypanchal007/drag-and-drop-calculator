@@ -5,7 +5,7 @@ const Display = () => {
   const displayValue = useCalculatorStore((state) => state.display);
 
   return (
-    <div className="w-full bg-[#1e1e1e] text-white text-right text-3xl rounded-lg shadow-inner">
+    <div className="w-full bg-light-display-bg dark:bg-dark-display-bg text-black dark:text-white text-text-light dark:text-text-dark text-right text-3xl rounded-lg shadow-inner">
       <input
         type="text"
         value={displayValue}
