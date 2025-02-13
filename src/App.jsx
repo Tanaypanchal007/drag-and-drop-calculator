@@ -16,7 +16,7 @@ const App = () => {
   return (
     <div className="flex font-mono justify-center items-center h-screen bg-light-main-bg dark:bg-dark-main-bg">
       <ThemeToggle />
-      <div className="flex flex-col justify-center items-center">
+      <div className="flex flex-col justify-center items-center mt-[35px]">
         <Calculator />
         <Note />
       </div>
