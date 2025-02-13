@@ -7,6 +7,9 @@ export default {
   ],
   theme: {
     extend: {
+      fontFamily: {
+        'mono': ["Montserrat", 'sans-mono'],
+      },
       colors: {
         light: {
           'main-bg': '#f0f2f5',
@@ -21,7 +24,8 @@ export default {
           'button-backside': '#282a2d',
           'calculator-border': '#3c4043',
         }
-      }
+      },
+
     },
   },
   plugins: [],
